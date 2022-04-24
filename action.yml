@@ -1,0 +1,34 @@
+name: 'Slack Notification Action'
+description: 'Sending messages to slack from github actions'
+inputs:
+  token:
+    description: 'slack API token'
+    required: true
+    default: ''
+  channel:
+    description: 'channel you want to post message to'
+    default: 'general'
+  title:
+    description: 'attachment title'
+    default: ''
+  title_link:
+    description: 'attachment title link'
+    default: ''
+  text:
+    description: 'main text'
+    default: ''
+  attachment_text:
+    description: 'attachment text'
+    default: ''
+  fields:
+    description: 'attachment message fields'
+    default: '[{}]'
+  status:
+    description: 'attachment message status'
+    default: ''
+  footer:
+    description: 'attachment message footer'
+    default: '' 
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
