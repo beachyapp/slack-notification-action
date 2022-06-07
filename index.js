@@ -6,7 +6,7 @@ try {
   var colorMap = new Map([
     ["success", "#36a64f"],
     ["failure", "#ff0000"],
-    ["danger", "#ffffd8"]
+    ["danger", "#ffc252"]
   ]);
 
   const token = core.getInput('token');
