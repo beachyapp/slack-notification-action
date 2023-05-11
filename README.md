@@ -44,7 +44,7 @@ Slack attachment message footer
 
 ```
 - name: Slack message
-  uses: beachyapp/slack-notification-action@v0.1
+  uses: beachyapp/slack-notification-action@v0.2
   with:
     token: <slack-token>
     channel: 'some-channel'
